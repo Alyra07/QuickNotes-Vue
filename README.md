@@ -40,6 +40,26 @@ npm run dev
 
 ### Struktur
 
+                    App.vue
+                       │
+        ┌──────────────┼───────────────┐
+        │              │               │
+    NoteForm        SearchBar       NoteCard
+        │              │               │
+     emit add        v-model         emit delete
+        │              │               │
+        └──────────────┼───────────────┘
+                       │
+                  useNotes.js
+                       │
+                useLocalStorage.js
+                       │
+                  localStorage
+
+- **Composition / Slots** -> `BaseCard` & `NoteCard`
+- **Composables** -> `useNotes` & `useLocalStorage`
+- **Props / State / Events** -> `NoteForm`, `NoteCard`, `SearchBar`, `App.vue`
+
 ### Drei Fragen...
 
 1. **Warum darf `NoteCard` die Notiz-Prop nicht selbst verändern, und wie löst ihr das stattdessen?**
