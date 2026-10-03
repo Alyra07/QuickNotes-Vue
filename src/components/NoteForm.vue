@@ -68,3 +68,29 @@ function submitNote() {
     </button>
   </form>
 </template>
+
+<style scoped>
+form {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  background-color: white;
+}
+
+form div {
+  display: grid;
+  gap: 6px;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+}
+
+button {
+  justify-self: start;
+}
+</style>

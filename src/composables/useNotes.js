@@ -27,7 +27,7 @@ export function useNotes() {
       const searchTerm = term.value
         .trim()
         .toLowerCase()
-
+      // Kein Suchbegriff -> alle Notizen returnen
       if (!searchTerm) {
         return notes.value
       }
